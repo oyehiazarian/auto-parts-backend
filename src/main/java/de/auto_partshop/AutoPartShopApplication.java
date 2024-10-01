@@ -1,13 +1,13 @@
-package de.shop.auto_parts;
+package de.auto_partshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AutoPartsApplication {
+public class AutoPartShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AutoPartsApplication.class, args);
+		SpringApplication.run(AutoPartShopApplication.class, args);
 	}
 
 }
