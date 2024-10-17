@@ -1,5 +1,6 @@
 package de.shop.auto_parts;
 
+import static org.assertj.core.api.FactoryBasedNavigableListAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -18,7 +19,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.server.ResponseStatusException;
 
-import de.shop.auto_parts.Security.model.Role;
 import de.shop.auto_parts.Security.model.User;
 import de.shop.auto_parts.Security.repository.UserRepository;
 import de.shop.auto_parts.Security.service.AuthenticationService;
@@ -68,7 +68,5 @@ public class UserServiceTest {
 
         assertFalse(token.isEmpty(), "Token should not be empty");
     }
-
-
 
 }

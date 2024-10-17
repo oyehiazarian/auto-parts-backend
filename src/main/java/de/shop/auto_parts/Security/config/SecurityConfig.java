@@ -32,7 +32,7 @@ public class SecurityConfig {
         this.userDetailsServiceImp = userDetailsServiceImp;
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;;
     }
-
+//Config for Filter Chain (test fro push)
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
