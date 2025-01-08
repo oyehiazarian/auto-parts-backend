@@ -1,7 +1,6 @@
 package de.shop.auto_parts;
 
-import static org.assertj.core.api.FactoryBasedNavigableListAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -25,7 +24,7 @@ import de.shop.auto_parts.Security.service.AuthenticationService;
 import de.shop.auto_parts.Security.service.JwtService;
 
 @ExtendWith(MockitoExtension.class)
-public class UserServiceTest {
+class UserServiceTest {
 
 
     @Mock

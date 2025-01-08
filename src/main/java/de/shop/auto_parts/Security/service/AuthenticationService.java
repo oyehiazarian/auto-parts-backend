@@ -23,10 +23,11 @@ public class AuthenticationService {
 
     private final AuthenticationManager authenticationManager;
 
-    public AuthenticationService(UserRepository repository, PasswordEncoder passwordEncoder, JwtService jwtService, AuthenticationManager authenticationManager) {
+    public AuthenticationService(UserRepository repository, PasswordEncoder passwordEncoder, JwtService jwtService,
+            AuthenticationManager authenticationManager) {
         this.repository = repository;
-        this.passwordEncoder = passwordEncoder;
         this.jwtService = jwtService;
+        this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
     }
 
@@ -41,7 +42,7 @@ public class AuthenticationService {
         user.setPassword(passwordEncoder.encode(request.getPassword()));
         user.setRole(request.getRole());
 
-        user= repository.save(user);
+        user = repository.save(user);
 
         String token = jwtService.generateToken(user);
 

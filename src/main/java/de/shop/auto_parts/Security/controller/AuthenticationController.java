@@ -28,4 +28,10 @@ public class AuthenticationController {
     public ResponseEntity<AuthenticationResponse> login(@RequestBody User request){
         return ResponseEntity.ok(authservice.authenticate(request));
     }
+
+    //profil
+
+    // address, date of birthday, payment, number of telefon, email.
+
+
 }
